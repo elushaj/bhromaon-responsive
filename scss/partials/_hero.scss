@@ -1,0 +1,101 @@
+.hero {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 740px;
+
+  &__content {
+    display: block;
+    width: 60rem;
+    text-align: center;
+    h1 {
+      font-family: $josefin;
+      font-size: 3.75rem;
+      font-weight: 700;
+      color: #ffffff;
+
+      line-height: 0px;
+    }
+    h2 {
+      font-family: $josefin;
+      font-weight: 400;
+      font-size: 1.52rem;
+      display: inline;
+      color: #ffffff;
+      letter-spacing: 6.82px;
+      line-height: 2px;
+    }
+  }
+
+  .form-group {
+    margin-top: 5em;
+    font-family: $josefin;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+ 
+    input {
+     
+      min-height: 3.18rem;
+      padding: 1px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 26px;
+      text-align: center;
+      font-size: 0.875rem;
+      width: 30rem;
+      border: none;
+
+      letter-spacing: 2.8px;
+    }
+    .search-button {
+      text-align: center;
+      color: #ffffff;
+      background-color: $light-blueberry;
+      min-height: 3.3rem;
+      min-width: 150px;
+      font-size: 0.875rem;
+      border:none;
+      cursor: pointer;
+      font-weight: 400;
+      transition: background-color ease-in 90ms;
+    }
+    .search-button:hover {
+      background-color: #5555fcd0;
+      letter-spacing: 3px;
+      i {
+        transform: scale(1.7);
+      }
+    }
+   
+  }
+  .hero__scroll {
+    text-align: center;
+
+    display: block;
+    margin-top: 6.688rem;
+    color: white;
+    font-family: $josefin;
+    line-height: 26px;
+    font-size: 0.875rem;
+    letter-spacing: 2.8px;
+    font-weight: normal;
+
+    .arrow {
+      display: inline-block;
+      margin: 1.2rem 0.2rem;
+
+      animation: bounce; /* referring directly to the animation's @keyframe declaration */
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      cursor: pointer;
+    }
+  }
+}

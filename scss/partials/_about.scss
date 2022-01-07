@@ -1,0 +1,85 @@
+.about {
+  &__container {
+    background-image: url(../img/rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    min-height: 600px;
+    color: white;
+    
+  }
+  &__content {
+ 
+ 
+    width: 550px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+  }
+  &__title {
+    font-family: $aleo;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  p {
+    font-family: $josefin;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+   
+  }
+  &__images {
+    display: grid;
+    margin-left: 5vw;
+  }
+  .img2 {
+   margin-left: 40px;
+    margin-top: 10px;
+    
+  }
+}
+
+
+
+  .btn {
+    margin-top: 50px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+     position: relative;
+      z-index: 1;
+      background: $light-blueberry;
+      color: #fff;
+      padding: 19px 17px 17px 34px;
+      transition: background 0.5s ease;
+     
+    
+    
+     
+      &:hover {
+        &::before {
+          width: 100%;
+          clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+        }
+      }
+      &::before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease;
+        clip-path: polygon(0 10%, 70% 0, 100% 100%, 0% 100%);
+        background: #496bfe;
+      }
+    }
+  

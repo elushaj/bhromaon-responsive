@@ -1,0 +1,54 @@
+.menu{
+
+    background: $light-blueberry;  
+max-width: 100%;
+
+
+color: white;
+    &__container{
+        display: flex;
+ align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin:0 auto;
+    min-height: 5.188rem;
+
+     h2{
+     font-family: $josefin;
+     font-weight: bold;
+     font-size: 1.5rem;
+     line-height: 26px;
+
+  margin-left:6%;
+  text-align: center;
+ }
+
+    }
+   &__items{
+font-family: $aleo;
+color: white;
+line-height: 26px;
+size:0.875rem ;
+cursor: pointer;
+width: 50%;
+
+  
+
+
+    }
+    
+    &__item{
+        list-style: none;
+      display: flex;
+      float: left;
+        margin-left: 2rem;
+      transition:all 0.3s ease;
+    }
+
+    &__item:hover{
+
+ 
+    transform: scale(1.3);
+
+}
+}

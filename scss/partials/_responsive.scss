@@ -1,0 +1,82 @@
+@media screen and (max-width:1255px){
+    .about__container{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .about__images{
+        margin-top: 20px;
+        display: inline;
+        align-content: center;
+text-align: center;
+
+    }
+   .img2{
+       margin-right: 40px;
+   }
+    
+    
+}
+@media  screen and (max-width:945px) {
+    .decoration{
+        display: none;
+    }
+    .guide__items{
+        font-size: 1rem;
+       margin: auto 0px;
+      
+       display: inline;
+       text-align: center;
+       
+    }
+    .guide__item{
+        margin-bottom: 15%;
+    }
+    .testimonials__item{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+    .testimonials__image{
+        position: relative;
+        width: 100%;
+    }
+    .testimonials__content{
+        position: relative;
+text-align: center;
+align-items: center;
+padding-left: 5%;
+width: fit-content;
+
+       
+        overflow-x: hidden;
+    }
+    .travel{
+    &_content{
+        display: flex;
+        align-items: center;
+        text-align: center;
+      width: 100%;
+ 
+       
+
+    }
+    .container{
+        display: inline; align-items: center;
+        text-align: center;
+        min-width: 125vw;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    body {
+      padding: 0px;
+    }
+    .container {
+      padding: 0px 15px;
+    }
+}
+}
